@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Elegant Moments Photography",
+    "photo": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80",
+    "category": "Photographer",
+    "location": "New York, NY",
+    "priceRange": "$1500 - $3000",
+    "description": "Capturing your special moments with elegance and style."
+  },
+  {
+    "id": 2,
+    "name": "Blossom Florist",
+    "photo": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
+    "category": "Florist",
+    "location": "Los Angeles, CA",
+    "priceRange": "$800 - $2000",
+    "description": "Beautiful floral arrangements for your dream wedding."
+  },
+  {
+    "id": 3,
+    "name": "Grand Venue Hall",
+    "photo": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=400&q=80",
+    "category": "Venue",
+    "location": "Chicago, IL",
+    "priceRange": "$5000 - $12000",
+    "description": "A grand venue for unforgettable celebrations."
+  },
+  {
+    "id": 4,
+    "name": "Sweet Treats Bakery",
+    "photo": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
+    "category": "Bakery",
+    "location": "Miami, FL",
+    "priceRange": "$300 - $1000",
+    "description": "Delicious cakes and desserts for your wedding day."
+  },
+  {
+    "id": 5,
+    "name": "Chic Events Planner",
+    "photo": "https://images.unsplash.com/photo-1468421870903-4df1664ac249?auto=format&fit=crop&w=400&q=80",
+    "category": "Planner",
+    "location": "San Francisco, CA",
+    "priceRange": "$2000 - $6000",
+    "description": "Expert planning for a stress-free wedding experience."
+  },
+  {
+    "id": 6,
+    "name": "Melody Makers Band",
+    "photo": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80",
+    "category": "Music",
+    "location": "Austin, TX",
+    "priceRange": "$1000 - $4000",
+    "description": "Live music to make your celebration unforgettable."
+  }
+] 

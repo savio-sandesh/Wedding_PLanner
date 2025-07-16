@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import axios from 'axios';
 
 const Auth = () => {
   const location = useLocation();
@@ -10,14 +11,16 @@ const Auth = () => {
     confirmPassword: '',
   });
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
+    setSuccess('');
     if (!form.email || !form.password || (!isLogin && !form.confirmPassword)) {
       setError('Please fill in all required fields.');
       return;
@@ -26,8 +29,23 @@ const Auth = () => {
       setError('Passwords do not match.');
       return;
     }
-    // Placeholder for authentication logic
-    alert(`${isLogin ? 'Login' : 'Register'} submitted!`);
+    try {
+      if (isLogin) {
+        const res = await axios.post('http://localhost:5000/api/login', {
+          email: form.email,
+          password: form.password,
+        });
+        setSuccess(res.data.message);
+      } else {
+        const res = await axios.post('http://localhost:5000/api/register', {
+          email: form.email,
+          password: form.password,
+        });
+        setSuccess(res.data.message);
+      }
+    } catch (err) {
+      setError(err.response?.data?.message || 'An error occurred');
+    }
   };
 
   return (
@@ -74,6 +92,7 @@ const Auth = () => {
           </div>
         )}
         {error && <div className="text-red-500 text-sm mb-2">{error}</div>}
+        {success && <div className="text-green-600 text-sm mb-2">{success}</div>}
         <button
           type="submit"
           className="w-full bg-pink-600 text-white font-semibold py-2 rounded-lg hover:bg-pink-700 transition-colors"

@@ -22,6 +22,43 @@ const Home = () => (
       <div className="absolute inset-0 bg-gradient-to-t from-blush via-beige/60 to-transparent" />
     </section>
     {/* Rest of Home content can go here */}
+    {/* Contact Us and Follow Us Section */}
+    <section className="mt-16 mb-8 flex flex-col md:flex-row gap-8 justify-between items-start bg-white p-8 rounded-2xl shadow-md">
+      {/* Contact Us */}
+      <div className="flex-1 mb-8 md:mb-0">
+        <h2 className="text-2xl font-bold text-pink-600 mb-4">Contact Us</h2>
+        <form className="space-y-4">
+          <div>
+            <label className="block mb-1 font-semibold" htmlFor="contactName">Name</label>
+            <input type="text" id="contactName" name="contactName" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-200" required />
+          </div>
+          <div>
+            <label className="block mb-1 font-semibold" htmlFor="contactEmail">Email</label>
+            <input type="email" id="contactEmail" name="contactEmail" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-200" required />
+          </div>
+          <div>
+            <label className="block mb-1 font-semibold" htmlFor="contactMessage">Message</label>
+            <textarea id="contactMessage" name="contactMessage" rows="3" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-200" required></textarea>
+          </div>
+          <button type="submit" className="bg-pink-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-pink-700 transition-colors">Send</button>
+        </form>
+      </div>
+      {/* Follow Us */}
+      <div className="flex-1 md:ml-8">
+        <h2 className="text-2xl font-bold text-pink-600 mb-4">Follow Us</h2>
+        <div className="flex space-x-6 text-3xl">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800" aria-label="Facebook">
+            <i className="fab fa-facebook"></i> Facebook
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:text-pink-700" aria-label="Instagram">
+            <i className="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600" aria-label="Twitter">
+            <i className="fab fa-twitter"></i> Twitter
+          </a>
+        </div>
+      </div>
+    </section>
   </div>
 );
 

@@ -66,7 +66,7 @@ const Home = () => (
       <h2 className="text-3xl font-bold text-center text-pink-600 mb-8">What Our Customers Say</h2>
       <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch">
         <div className="flex-1 bg-white p-6 rounded-xl shadow text-center">
-          <p className="text-lg italic mb-4">“LoverlyClone made planning our wedding so much easier! The vendor search was a lifesaver.”</p>
+          <p className="text-lg italic mb-4">“7HeavenWeds made planning our wedding so much easier! The vendor search was a lifesaver.”</p>
           <div className="font-semibold text-pink-600">— Emily & James</div>
         </div>
         <div className="flex-1 bg-white p-6 rounded-xl shadow text-center">

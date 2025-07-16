@@ -8,6 +8,7 @@ import VendorSearch from './pages/VendorSearch';
 import WeddingTools from './pages/WeddingTools';
 import Blog from './pages/Blog';
 import Auth from './pages/Auth';
+import BlogTopic from './pages/BlogTopic';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/vendors" element={<VendorSearch />} />
             <Route path="/tools" element={<WeddingTools />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogTopic />} />
             <Route path="/login" element={<Auth />} />
             <Route path="/register" element={<Auth />} />
           </Routes>

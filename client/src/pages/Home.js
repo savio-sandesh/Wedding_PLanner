@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 const Home = () => (
   <div>
@@ -26,36 +27,55 @@ const Home = () => (
     <section className="mt-16 mb-8 flex flex-col md:flex-row gap-8 justify-between items-start bg-white p-8 rounded-2xl shadow-md">
       {/* Contact Us */}
       <div className="flex-1 mb-8 md:mb-0">
-        <h2 className="text-2xl font-bold text-pink-600 mb-4">Contact Us</h2>
-        <form className="space-y-4">
+        <h2 className="text-2xl font-bold text-pink-600 mb-4">Contact us to get best deals</h2>
+        <div className="space-y-4 text-base">
           <div>
-            <label className="block mb-1 font-semibold" htmlFor="contactName">Name</label>
-            <input type="text" id="contactName" name="contactName" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-200" required />
+            <span className="font-semibold text-pink-600">For Vendors</span><br />
+            <span>vendors@wedmegood.com</span><br />
+            <span>0124-6812346</span>
           </div>
           <div>
-            <label className="block mb-1 font-semibold" htmlFor="contactEmail">Email</label>
-            <input type="email" id="contactEmail" name="contactEmail" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-200" required />
+            <span className="font-semibold text-pink-600">For Users</span><br />
+            <span>info@wedmegood.com</span><br />
+            <span>0124-6812345</span>
           </div>
           <div>
-            <label className="block mb-1 font-semibold" htmlFor="contactMessage">Message</label>
-            <textarea id="contactMessage" name="contactMessage" rows="3" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-200" required></textarea>
+            <span className="font-semibold text-pink-600">Registered Address</span><br />
+            <span>Second Floor, Ocus Technopolis, Sector 54 Golf Course Road, Gurgaon, Haryana, India, 122002</span>
           </div>
-          <button type="submit" className="bg-pink-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-pink-700 transition-colors">Send</button>
-        </form>
+        </div>
       </div>
       {/* Follow Us */}
       <div className="flex-1 md:ml-8">
         <h2 className="text-2xl font-bold text-pink-600 mb-4">Follow Us</h2>
         <div className="flex space-x-6 text-3xl">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800" aria-label="Facebook">
-            <i className="fab fa-facebook"></i> Facebook
+            <FaFacebook />
           </a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:text-pink-700" aria-label="Instagram">
-            <i className="fab fa-instagram"></i> Instagram
+            <FaInstagram />
           </a>
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600" aria-label="Twitter">
-            <i className="fab fa-twitter"></i> Twitter
+            <FaTwitter />
           </a>
+        </div>
+      </div>
+    </section>
+    {/* Testimonial Section */}
+    <section className="my-16 bg-beige p-8 rounded-2xl shadow-md">
+      <h2 className="text-3xl font-bold text-center text-pink-600 mb-8">What Our Customers Say</h2>
+      <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch">
+        <div className="flex-1 bg-white p-6 rounded-xl shadow text-center">
+          <p className="text-lg italic mb-4">“LoverlyClone made planning our wedding so much easier! The vendor search was a lifesaver.”</p>
+          <div className="font-semibold text-pink-600">— Emily & James</div>
+        </div>
+        <div className="flex-1 bg-white p-6 rounded-xl shadow text-center">
+          <p className="text-lg italic mb-4">“We found so much inspiration in the gallery and loved how organized everything was.”</p>
+          <div className="font-semibold text-pink-600">— Priya & Arjun</div>
+        </div>
+        <div className="flex-1 bg-white p-6 rounded-xl shadow text-center">
+          <p className="text-lg italic mb-4">“The tools helped us keep track of every detail. Highly recommend!”</p>
+          <div className="font-semibold text-pink-600">— Sarah & Alex</div>
         </div>
       </div>
     </section>
